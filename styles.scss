@@ -2,39 +2,75 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;    
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;     
 }
 
-
+//top-navbar//
 .top-nav{
     background-color: #e1f785;
-    height: 41px;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    padding: 10px 0;
+    height: 45px;    
+    a{
+        text-decoration: none;        
+    }
 }
-
-.link-part{
-    padding-top: 22px;
-    .col-lg-6{
-        .link-logo-part{            
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            li{
-                list-style-type: none;
-                display: inline;
-                padding: 7px;    
-                
-                a{
-                    img{
-                        width: 30px;
-                        height: 30px;
-                    }
+//Main-navbar
+.ca-navbar{    
+        width: 100%; 
+        padding: 20px 0;       
+    .container-fluid{   
+        width: 840px;          
+        a{
+            img{
+                width: 132px;
+                height: 65px;
+            }
+        }
+        .ca-nav-border{            
+            border: 1px solid black;
+            border-radius: 40px;             
+            .navbar-nav{
+                .nav-item{
+                    width: 158px;
+                    height: 45.55px;
+                    box-sizing: border-box;
+                    overflow: hidden;
+                    position: relative;                    
+                    .text{
+                        p{
+                            width: 100%;
+                            height: 100%;
+                            text-align: center;
+                            line-height: 44px;
+                            margin: 0;
+                        }
+                    }    
                 }
             }
         }
     }
+}
+//link-part
+.link-part{
+    padding: 22px 0;
+    .col-lg-6{
+        .link-logo-part{ 
+            padding: 0;           
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap:10px;
+            li{
+                list-style-type: none;
+                display: inline;                           
+                left:100%; 
+                img{
+                    max-height: 40px;                   
+                }
+            }
+        }
+    }    
     .text-part{
         p{           
             display: flex;
@@ -52,28 +88,124 @@
                 background-color: #e1f785;
                 border-radius: 40px;
                 margin-left: 10px;
-            }       }
+            }     
+          }
     }
 }
-.ca-navbar{
-    padding: 10px 110px;
-    
-    .container-fluid{
-        
-        a{
-            img{
-                width: 130px;
-                height: 130px;
+hr{    
+    border: 1px solid #000;
+}
+
+//secion-1-scss-part//
+
+.section-1{
+    .row{
+        .sec-1-col{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            // height: 100%;
+            .section-1-text {
+                p{
+                    // font-size: 80px;
+                    margin: 2px;
+                    line-height: 1rem;
+                }
+                
+            }
+            .input-group{
+                width: 100%;
+                max-width: 330px;
+                margin: 0 auto;
+               
+                input{                
+                padding: 10px;
+                border: 2px solid #000;
+                border-right: 0;
+                border-radius: 4px;
+                padding-left: 13px; /* Remove right border for seamless look */
+                // border-top-left-radius: 0.25rem;
+                // border-bottom-left-radius: 0.25rem;
+                }
+                .btn{
+                    width: 100px;
+                background-color: #000;
+                padding: 10px 20px;
+                border: 2px solid #000;
+                border-left: 0;
+                border-radius: 4px; /* Remove left border for seamless look */
+                // border-top-right-radius: 0.25rem;
+                // border-bottom-right-radius: 0.25rem;
+                color: #fff;
+                }
             }
         }
-        .ca-nav-border{
-            border: 1px solid black;
-            border-radius: 40px;
-            
-            
+        .sec-1-img-part{
+            object-fit: cover;
         }
     }
 }
-hr{
-    color: black;
+
+
+//section-2-scss//
+.section-2{
+    .row{
+        .img-part{
+          
+        }
+        .text-col-1{ 
+            background-color: #D9F567;          
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center; 
+            padding: 30px 22px;           
+            span{
+            display: block;           
+            font-size: 23px;
+            }
+        }
+        .text-col-2{
+            background-color: #E7DDC7;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;  
+            padding: 30px 22px;                 
+            span{
+            display: block;           
+            font-size: 23px;
+            }
+        }
+        .info-col{
+            background-color: #FFFFFE;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;  
+            font-size: 23px;
+            padding: 30px 22px;
+            .info-col-icon{
+                padding: 5px 0;                
+                li{
+                    list-style-type: none;
+                    display: inline;                
+                    
+                }
+            }
+        }
+    }
+}
+
+//section-3-part//
+.section-3-black-part{
+    background-color: radial-gradient(circle at 50% 50%, #393536 25.52626132965088%, #231F20 100%);
+    .sec-3-text{
+        padding-top: 5rem;
+        
+        h3{
+            color:#ffffff ;
+        }
+    }
 }
