@@ -117,16 +117,13 @@ hr{
             .input-group{
                 width: 100%;
                 max-width: 330px;
-                margin: 0 auto;
-               
+                margin: 0 auto;               
                 input{                
                 padding: 10px;
                 border: 2px solid #000;
                 border-right: 0;
                 border-radius: 4px;
-                padding-left: 13px; /* Remove right border for seamless look */
-                // border-top-left-radius: 0.25rem;
-                // border-bottom-left-radius: 0.25rem;
+                padding-left: 13px; 
                 }
                 .btn{
                     width: 100px;
@@ -134,9 +131,7 @@ hr{
                 padding: 10px 20px;
                 border: 2px solid #000;
                 border-left: 0;
-                border-radius: 4px; /* Remove left border for seamless look */
-                // border-top-right-radius: 0.25rem;
-                // border-bottom-right-radius: 0.25rem;
+                border-radius: 4px; 
                 color: #fff;
                 }
             }
@@ -200,12 +195,89 @@ hr{
 
 //section-3-part//
 .section-3-black-part{
-    background-color: radial-gradient(circle at 50% 50%, #393536 25.52626132965088%, #231F20 100%);
+    background-color:#353132;
     .sec-3-text{
-        padding-top: 5rem;
-        
-        h3{
+        padding-top: 5rem;        
+        h2{
             color:#ffffff ;
+        }
+        .section-3-centre-part{
+            background-color: 
+            #353132;
+            .section-3-img{
+                padding-top: 4rem;                
+                img{
+
+                }
+                .listen-podcast{
+                    padding-top: 1.3rem;
+                    padding-bottom: 8rem;                    
+                    span{
+                        img{
+                            margin-left: 1.3rem;
+                        }   
+                        button{
+                            margin-left: 1.7rem;
+                            width: 183px;
+                            height:58px;
+                            border: 0;
+                        }                     
+                    }
+                    
+                }
+            }
+        }
+    }
+}
+
+//section-4
+.section-4{
+    .sec-4-headline{
+        
+        h4{
+            padding-top: 2rem;
+            padding-bottom: 15px;
+        }
+        .rotating-names{
+          
+            hr{
+                border: 1px solid black;
+                background-color: #000;
+            }
+        }
+        .sec-4-bottomline{
+           
+        }
+    }
+}
+
+//section-5
+.section-5{
+    .sec-5-headline-part{
+        padding-top: 3rem;
+        .sec-5-text{
+            color: #fff;
+        }
+        .sec-5-input-group{
+            width: 100%;
+            max-width: 330px;
+            margin: 0 auto;               
+            input{                
+            padding: 10px;
+            border: 2px solid #e1f785;
+            border-right: 0;
+            border-radius: 4px;
+            padding-left: 13px; 
+            }
+            .btn{
+                width: 100px;
+            background-color: #e1f785;
+            padding: 10px 20px;
+            border: 2px solid #e1f785;
+            border-left: 0;
+            border-radius: 4px; 
+            color: #fff;
+            }
         }
     }
 }

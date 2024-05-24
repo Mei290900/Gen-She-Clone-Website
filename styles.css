@@ -106,7 +106,7 @@ hr {
   border: 2px solid #000;
   border-right: 0;
   border-radius: 4px;
-  padding-left: 13px; /* Remove right border for seamless look */
+  padding-left: 13px;
 }
 .section-1 .row .sec-1-col .input-group .btn {
   width: 100px;
@@ -114,7 +114,7 @@ hr {
   padding: 10px 20px;
   border: 2px solid #000;
   border-left: 0;
-  border-radius: 4px; /* Remove left border for seamless look */
+  border-radius: 4px;
   color: #fff;
 }
 .section-1 .row .sec-1-img-part {
@@ -164,11 +164,66 @@ hr {
 }
 
 .section-3-black-part {
-  background-color: radial-gradient(circle at 50% 50%, #393536 25.5262613297%, #231F20 100%);
+  background-color: #353132;
 }
 .section-3-black-part .sec-3-text {
   padding-top: 5rem;
 }
-.section-3-black-part .sec-3-text h3 {
+.section-3-black-part .sec-3-text h2 {
   color: #ffffff;
+}
+.section-3-black-part .sec-3-text .section-3-centre-part {
+  background-color: #353132;
+}
+.section-3-black-part .sec-3-text .section-3-centre-part .section-3-img {
+  padding-top: 4rem;
+}
+.section-3-black-part .sec-3-text .section-3-centre-part .section-3-img .listen-podcast {
+  padding-top: 1.3rem;
+  padding-bottom: 8rem;
+}
+.section-3-black-part .sec-3-text .section-3-centre-part .section-3-img .listen-podcast span img {
+  margin-left: 1.3rem;
+}
+.section-3-black-part .sec-3-text .section-3-centre-part .section-3-img .listen-podcast span button {
+  margin-left: 1.7rem;
+  width: 183px;
+  height: 58px;
+  border: 0;
+}
+
+.section-4 .sec-4-headline h4 {
+  padding-top: 2rem;
+  padding-bottom: 15px;
+}
+.section-4 .sec-4-headline .rotating-names hr {
+  border: 1px solid black;
+  background-color: #000;
+}
+.section-5 .sec-5-headline-part {
+  padding-top: 3rem;
+}
+.section-5 .sec-5-headline-part .sec-5-text {
+  color: #fff;
+}
+.section-5 .sec-5-headline-part .sec-5-input-group {
+  width: 100%;
+  max-width: 330px;
+  margin: 0 auto;
+}
+.section-5 .sec-5-headline-part .sec-5-input-group input {
+  padding: 10px;
+  border: 2px solid #e1f785;
+  border-right: 0;
+  border-radius: 4px;
+  padding-left: 13px;
+}
+.section-5 .sec-5-headline-part .sec-5-input-group .btn {
+  width: 100px;
+  background-color: #e1f785;
+  padding: 10px 20px;
+  border: 2px solid #e1f785;
+  border-left: 0;
+  border-radius: 4px;
+  color: #fff;
 }/*# sourceMappingURL=styles.css.map */
