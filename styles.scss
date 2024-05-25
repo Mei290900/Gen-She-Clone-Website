@@ -145,10 +145,7 @@ hr{
 
 //section-2-scss//
 .section-2{
-    .row{
-        .img-part{
-          
-        }
+    .row{       
         .text-col-1{ 
             background-color: #D9F567;          
             display: flex;
@@ -202,53 +199,77 @@ hr{
             color:#ffffff ;
         }
         .section-3-centre-part{
-            background-color: 
-            #353132;
+            background-color: #353132;
             .section-3-img{
-                padding-top: 4rem;                
-                img{
-
-                }
+                padding-top: 4rem;                 
+                .animated-img{
+                    transition:transform 1s ease;                
+                }     
+                .animated-img:hover{
+                    transform: scale(1.2);
+                }           
                 .listen-podcast{
                     padding-top: 1.3rem;
-                    padding-bottom: 8rem;                    
+                    padding-bottom: 8rem;    
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 1rem;                
                     span{
                         img{
-                            margin-left: 1.3rem;
+                            margin-left: 1rem;
                         }   
                         button{
-                            margin-left: 1.7rem;
+                            margin-left: 1rem;
                             width: 183px;
                             height:58px;
                             border: 0;
                         }                     
                     }
                     
+                }                
+                }
+                @keyframes ease-in {
+                    to {scale: 1; opacity: 1;}
                 }
             }
         }
     }
-}
-
+    
+      
 //section-4
 .section-4{
-    .sec-4-headline{
-        
+    .sec-4-headline{        
         h4{
             padding-top: 2rem;
             padding-bottom: 15px;
         }
-        .rotating-names{
-          
+    }
+        .scroller{
+            max-width: 900px;          
+            .scroller_inner{
+            display: flex;
+            flex-wrap: wrap;
+            }            
             hr{
                 border: 1px solid black;
                 background-color: #000;
             }
         }
-        .sec-4-bottomline{
-           
-        }
+        .scroller[data-animated="true"]{
+            overflow: hidden;
+           mask: linear-gradient(90deg, transparent, white, 20%);
+            .scroller_inner{
+                 flex-wrap: nowrap;
+                 animation: scroll 40s;
+            }
+        }   
+}
+@keyframes scroll {
+    to{
+        transform: translate(100%);
     }
+    
 }
 
 //section-5
@@ -257,26 +278,31 @@ hr{
         padding-top: 3rem;
         .sec-5-text{
             color: #fff;
+            .stick{
+                width: 3px; /* Thickness of the stick */
+                height: 70px; /* Length of the stick */
+                background-color: grey; /* Color of the stick */
+                margin: 20px auto;
+            }
         }
-        .sec-5-input-group{
-            width: 100%;
-            max-width: 330px;
-            margin: 0 auto;               
-            input{                
+        .sec-5-input-group{                 
+            display: flex;
+            align-items: center;
+            justify-content: center;    
+            padding-top: 1rem;
+            input{                         
             padding: 10px;
             border: 2px solid #e1f785;
-            border-right: 0;
-            border-radius: 4px;
+            // border-right: 0;           
             padding-left: 13px; 
             }
             .btn{
-                width: 100px;
+            width: 100px;
             background-color: #e1f785;
             padding: 10px 20px;
-            border: 2px solid #e1f785;
-            border-left: 0;
-            border-radius: 4px; 
-            color: #fff;
+            border: 2px solid #e1f785;  
+           border-radius: 0%;
+            color: #000;
             }
         }
     }

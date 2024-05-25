@@ -178,27 +178,65 @@ hr {
 .section-3-black-part .sec-3-text .section-3-centre-part .section-3-img {
   padding-top: 4rem;
 }
+.section-3-black-part .sec-3-text .section-3-centre-part .section-3-img .animated-img {
+  transition: transform 1s ease;
+}
+.section-3-black-part .sec-3-text .section-3-centre-part .section-3-img .animated-img:hover {
+  transform: scale(1.2);
+}
 .section-3-black-part .sec-3-text .section-3-centre-part .section-3-img .listen-podcast {
   padding-top: 1.3rem;
   padding-bottom: 8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
 }
 .section-3-black-part .sec-3-text .section-3-centre-part .section-3-img .listen-podcast span img {
-  margin-left: 1.3rem;
+  margin-left: 1rem;
 }
 .section-3-black-part .sec-3-text .section-3-centre-part .section-3-img .listen-podcast span button {
-  margin-left: 1.7rem;
+  margin-left: 1rem;
   width: 183px;
   height: 58px;
   border: 0;
+}
+@keyframes ease-in {
+  to {
+    scale: 1;
+    opacity: 1;
+  }
 }
 
 .section-4 .sec-4-headline h4 {
   padding-top: 2rem;
   padding-bottom: 15px;
 }
-.section-4 .sec-4-headline .rotating-names hr {
+.section-4 .scroller {
+  max-width: 900px;
+}
+.section-4 .scroller .scroller_inner {
+  display: flex;
+  flex-wrap: wrap;
+}
+.section-4 .scroller hr {
   border: 1px solid black;
   background-color: #000;
+}
+.section-4 .scroller[data-animated=true] {
+  overflow: hidden;
+  -webkit-mask: linear-gradient(90deg, transparent, white, 20%);
+          mask: linear-gradient(90deg, transparent, white, 20%);
+}
+.section-4 .scroller[data-animated=true] .scroller_inner {
+  flex-wrap: nowrap;
+  animation: scroll 40s;
+}
+
+@keyframes scroll {
+  to {
+    transform: translate(100%);
+  }
 }
 .section-5 .sec-5-headline-part {
   padding-top: 3rem;
@@ -206,16 +244,21 @@ hr {
 .section-5 .sec-5-headline-part .sec-5-text {
   color: #fff;
 }
+.section-5 .sec-5-headline-part .sec-5-text .stick {
+  width: 3px; /* Thickness of the stick */
+  height: 70px; /* Length of the stick */
+  background-color: grey; /* Color of the stick */
+  margin: 20px auto;
+}
 .section-5 .sec-5-headline-part .sec-5-input-group {
-  width: 100%;
-  max-width: 330px;
-  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 1rem;
 }
 .section-5 .sec-5-headline-part .sec-5-input-group input {
   padding: 10px;
   border: 2px solid #e1f785;
-  border-right: 0;
-  border-radius: 4px;
   padding-left: 13px;
 }
 .section-5 .sec-5-headline-part .sec-5-input-group .btn {
@@ -223,7 +266,6 @@ hr {
   background-color: #e1f785;
   padding: 10px 20px;
   border: 2px solid #e1f785;
-  border-left: 0;
-  border-radius: 4px;
-  color: #fff;
+  border-radius: 0%;
+  color: #000;
 }/*# sourceMappingURL=styles.css.map */
