@@ -358,7 +358,7 @@ hr {
 }
 .section-6 .row-no-1 .vertical-line {
   width: 2px; /* Adjust the width of the line */
-  height: 250%; /* Full height of the parent */
+  height: 245%; /* Full height of the parent */
   background-color: #000; /* Adjust the color as needed */
   position: absolute;
   left: 50%; /* Center the line horizontally */
@@ -480,4 +480,56 @@ hr {
 
 .img-wrapper-text {
   text-align: right;
+}
+
+.feature .row .col-lg-4 {
+  color: grey;
+}
+
+.keep-up-with-us {
+  background-color: #E2DBC8;
+}
+.keep-up-with-us .header-text h2 {
+  padding: 2rem;
+}
+.keep-up-with-us .ig-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 9rem;
+}
+.keep-up-with-us .ig-reels-layouts .boxes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+.keep-up-with-us .ig-reels-layouts .boxes .box1 {
+  outline: 1px solid #000;
+  width: 300px;
+  height: 300px;
+  margin-right: 2rem;
+  background-color: grey;
+  position: relative;
+}
+.keep-up-with-us .ig-reels-layouts .boxes .box1 video {
+  width: 300px;
+  height: 300px;
+  position: absolute;
+}
+.keep-up-with-us .ig-reels-layouts .boxes .box1 video:hover {
+  opacity: 0.5;
+}
+.keep-up-with-us .ig-reels-layouts .boxes .box1 .hover-text {
+  display: none; /* Hide by default */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-90%, -90%);
+  color: white;
+  font-size: 16px;
+  text-align: center;
+}
+.keep-up-with-us .ig-reels-layouts .boxes:hover .hover-text {
+  display: block;
 }/*# sourceMappingURL=styles.css.map */
