@@ -327,30 +327,30 @@ hr {
 .section-6 .row-no-1 {
   padding-top: 89px;
 }
-.section-6 .row-no-1 .col-lg-6 .img-wrapper-1 {
+.section-6 .row-no-1 .col-lg-4 .img-wrapper-1 {
   position: relative;
-  width: 80%;
+  width: 100%;
   height: auto;
   left: 55px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.section-6 .row-no-1 .col-lg-6 .img-wrapper-1 img {
+.section-6 .row-no-1 .col-lg-4 .img-wrapper-1 img {
   z-index: 1;
   position: absolute;
   top: 0;
   left: 0;
-  width: 80%;
+  width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.section-6 .row-no-1 .col-lg-6 .img-wrapper-1 video {
+.section-6 .row-no-1 .col-lg-4 .img-wrapper-1 video {
   z-index: 0;
   position: absolute;
   top: 0;
   left: 0;
-  width: 80%;
+  width: 100%;
   outline: 0;
   border: 0;
   -o-object-fit: cover;
@@ -371,10 +371,10 @@ hr {
   padding-bottom: 40px;
 }
 .section-6 .row-no-2 {
-  padding-top: 9rem;
+  padding-top: 7rem;
 }
 .section-6 .row-no-2 .sec-6-row-2-text-part {
-  display: inline-block;
+  display: inline;
   justify-content: center;
   align-items: center;
 }
@@ -412,4 +412,72 @@ hr {
   border: 0;
   -o-object-fit: cover;
      object-fit: cover;
+}
+.section-6 .row-no-3 {
+  padding-top: 7rem;
+}
+.section-6 .row-no-3 .col-lg-5 .img-wrapper-1 {
+  position: relative;
+  width: 90%;
+  height: auto;
+  left: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section-6 .row-no-3 .col-lg-5 .img-wrapper-1 img {
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.section-6 .row-no-3 .col-lg-5 .img-wrapper-1 video {
+  z-index: 0;
+  position: absolute;
+  bottom: -319px;
+  left: 0;
+  width: 91%;
+  outline: 0;
+  border: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.section-6 .row-no-4 {
+  padding-top: 7rem;
+}
+.section-6 .row-no-4 .col-lg-6 .img-wrapper {
+  position: relative;
+  width: 80%;
+  height: auto;
+  left: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section-6 .row-no-4 .col-lg-6 .img-wrapper img {
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 80%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.section-6 .row-no-4 .col-lg-6 .img-wrapper video {
+  z-index: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  outline: 0;
+  border: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.img-wrapper-text {
+  text-align: right;
 }/*# sourceMappingURL=styles.css.map */
