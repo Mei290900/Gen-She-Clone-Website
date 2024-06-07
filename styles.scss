@@ -373,38 +373,14 @@ hr{
             padding-bottom: 15px;
         }
     }
-        .scroller{
-            max-width: 900px;          
-            .scroller_inner{
-            display: flex;
-            flex-wrap: wrap;
-            }            
-            hr{
-                border: 1px solid black;
-                background-color: #000;
-            }
-        }
-        .scroller[data-animated="true"]{
-            overflow: hidden;
-           mask: linear-gradient(90deg, transparent, white, 20%);
-            .scroller_inner{
-                 flex-wrap: nowrap;
-                 animation: scroll 40s;
-            }
-        }   
-}
-@keyframes scroll {
-    to{
-        transform: translate(100%);
-    }
-    
+       
 }
 
 /* //section-5 */
 .section-5{
     background-color: #231f20;
     color: #ffffff;
-    padding: 40px;
+    padding: 40px 10px;
     .sec-5-headline-part{
         padding-top: 3rem;
         .sec-5-text{         
@@ -520,15 +496,13 @@ hr{
     
     .row-no-1{
         padding-top: 89px;
-        .col-lg-4{
+        .col-lg-6{
             .img-wrapper-1{
                 position: relative;
                 width: 100%; 
                 height: auto; 
                 left: 55px;
-                /* display: flex;
-                justify-content: center;
-                align-items: center; */
+                
                 img {
                     z-index: 1;
                     position: absolute;
@@ -548,16 +522,8 @@ hr{
                     object-fit: cover;                    
                 }
             }
-        }
-        .vertical-line {
-            width: 2px; /* Adjust the width of the line */
-            height: 245% ; /* Full height of the parent */
-            background-color: #000; /* Adjust the color as needed */
-            position: absolute;
-            left: 50%; /* Center the line horizontally */
-            transform: translateX(-50%);
-          }
-        .sec-6-text{
+        }        
+        .sec-6-text{            
             
            h2{
             padding-bottom: 10px;

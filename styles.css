@@ -300,37 +300,45 @@ hr {
   padding-top: 2rem;
   padding-bottom: 15px;
 }
+
 .section-4 .scroller {
-  max-width: 900px;
+  max-width: 100%; 
+  overflow: hidden;
+  
 }
-.section-4 .scroller .scroller_inner {
+.section-4 .scroller .scroller__inner {
   display: flex;
   flex-wrap: wrap;
+  gap:0.52rem;
+  padding:  20px;
 }
-.section-4 .scroller hr {
-  border: 1px solid black;
-  background-color: #000;
+.section-4 .scroller .scroller__inner li {
+  list-style: none; 
+  width: 100%; 
 }
+
 .section-4 .scroller[data-animated=true] {
+  padding: 10px;
   overflow: hidden;
-  -webkit-mask: linear-gradient(90deg, transparent, white, 20%);
-          mask: linear-gradient(90deg, transparent, white, 20%);
+  /* mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent); */
 }
-.section-4 .scroller[data-animated=true] .scroller_inner {
+
+.section-4 .scroller[data-animated=true] .scroller__inner{
   flex-wrap: nowrap;
-  animation: scroll 40s;
+  animation: scroll 60s linear infinite;
 }
 
 @keyframes scroll {
-  to {
-    transform: translate(100%);
+  to{
+    transform: translate(-100%);
   }
 }
+
 /* //section-5 */
 .section-5 {
   background-color: #231f20;
   color: #ffffff;
-  padding: 40px;
+  padding: 40px 10px;
 }
 .section-5 .sec-5-headline-part {
   padding-top: 3rem;
@@ -440,16 +448,13 @@ hr {
 .section-6 .row-no-1 {
   padding-top: 89px;
 }
-.section-6 .row-no-1 .col-lg-4 .img-wrapper-1 {
+.section-6 .row-no-1 .col-lg-6 .img-wrapper-1 {
   position: relative;
   width: 100%;
   height: auto;
   left: 55px;
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
 }
-.section-6 .row-no-1 .col-lg-4 .img-wrapper-1 img {
+.section-6 .row-no-1 .col-lg-6 .img-wrapper-1 img {
   z-index: 1;
   position: absolute;
   top: 0;
@@ -458,7 +463,7 @@ hr {
   -o-object-fit: cover;
      object-fit: cover;
 }
-.section-6 .row-no-1 .col-lg-4 .img-wrapper-1 video {
+.section-6 .row-no-1 .col-lg-6 .img-wrapper-1 video {
   z-index: 0;
   position: absolute;
   top: 0;
@@ -468,14 +473,6 @@ hr {
   border: 0;
   -o-object-fit: cover;
      object-fit: cover;
-}
-.section-6 .row-no-1 .vertical-line {
-  width: 2px; /* Adjust the width of the line */
-  height: 245%; /* Full height of the parent */
-  background-color: #000; /* Adjust the color as needed */
-  position: absolute;
-  left: 50%; /* Center the line horizontally */
-  transform: translateX(-50%);
 }
 .section-6 .row-no-1 .sec-6-text h2 {
   padding-bottom: 10px;
