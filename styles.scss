@@ -603,7 +603,8 @@ hr{
 /* //last part */
 .keep-up-with-us{
     background-color:#E2DBC8;
-    height: 500vh;
+    height: 200vh;
+    padding: 0 30rem;
     .header-text{
         h2{
             padding: 2rem; 
@@ -612,62 +613,133 @@ hr{
     .ig-info{
         display: flex;
         align-items: center;
-        justify-content: space-between;
-        padding: 1rem 9rem;    
+        justify-content: space-between;         
     }
-    .ig-reels-layouts{  
-        max-width: 700px;     
-        height: auto;
-        display: inline;
-        align-items: center;
-        justify-content: center;       
+    .box-container{
+       
         .boxes{
-        width: 100%;
-        display: flex;
-        
-        justify-content: center;
-        align-items: center;
-        padding-left: 20px;
-        gap: 2rem;       
-            .box1{              
-                width: 200px;
-                height: auto; 
-                margin-right: 2rem;               
-                background-color: grey;
-                position: relative;
-                margin-top: 2rem;
-              
+            .box1{
+                display: flex;
+                align-items: center;
+                justify-content: center;  
+                        
                 video{
-                    width: 200px;
-                    height: auto;
-                    position: absolute;
-                }    
-                
+                 
+                border-radius: 4px;
+                            
+                }
             }
         }
-       
+    }
+ 
+    .ig_section_btn{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 2rem;        
+        button{
+            background-color: #fff;
+            padding: 10px;
+            border: 0;
+            outline: 0;
+            width: 150px;
+          
+        }
+        button:hover{
+            background-color: #000;
+            color: #fff;
+            transition: 0.7s;
         }
     }
-    @media (min-width:320px) and (max-width:576.98px){
+}
+    @media (min-width:320.98px) and (max-width:576.98px){
         .keep-up-with-us{
+            padding: 0 20px;
+            height: 100vh;
             .ig-info{
                 display: block;
-                padding: 15px;
+                /* padding: 15px; */
             }
-            .ig-reels-layouts{
+            .box-container{
+                display: flex;
                 .boxes{
-                    gap: 0rem;
-                    padding-left: 30px;
                     .box1{
-
+                        video{
+                            width: 100px;
+                            height: 100px;
+                        }
                     }
                 }
             }
         }
     }
 
+    @media (min-width:576.98px) and (max-width:768.98px) {
+        .keep-up-with-us{
+            height: 95vh;
+            padding: 0 30px;
+            .ig-info{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+            .box-container{
+                /* display: flex; */
+                .boxes{
+                    .box1{
+                        video{
+                            width: 200px;
+                            height: 200px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @media (min-width:768px) and (max-width:1200.98px){
+        .keep-up-with-us{
+            height: 180vh;
+            padding: 0 50px;
+            .ig-info{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+            .box-container{
+                /* display: flex; */
+                .boxes{
+                    .box1{
+                        video{
+                            width: 230px;
+                            height: 230px;
+                        }
+                    }
+                }
+            }
+        }
+    }
 
-
+.stay_in_loop{
+    .loop{
+        display: flex;
+        gap: 1rem;
+        li{
+            font-size: 50px;
+            list-style: none;
+            gap: 1rem;
+        }
+    }
+}
+@media (min-width:320.98px) and (max-width:576.98px){
+    .stay_in_loop{
+        .loop{
+            span{
+                font-size: 60px;
+                gap:0.5rem;
+            }
+        }
+    }
+}
 
 
 
