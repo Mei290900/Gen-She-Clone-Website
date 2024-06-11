@@ -19,3 +19,13 @@ function addAnimation(){
         });
     });
 }
+
+const footer_scrollers = document.querySelectorAll('.footer_scroller');
+if(!window.matchMedia("(prefers-reduced-motion: reduce)").matches){
+    addAnimation();
+}
+function addAnimation(){
+    footer_scrollers.forEach((footer_scroller) => {
+        footer_scroller.setAttribute("data-animated", true);
+    })
+}

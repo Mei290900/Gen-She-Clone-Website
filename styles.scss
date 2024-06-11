@@ -377,28 +377,23 @@ hr{
     }
     .scroller {
         max-width: 100%;
-        overflow: hidden; 
-    
+        overflow: hidden;
         & .scroller__inner {
           display: flex;
           gap: 1rem;
-    
           li {
             list-style-type: none;
           }
-        }
-    
+        }    
         &[data-animated="true"] {
-          overflow: hidden;
-    
+          overflow: hidden;    
           & .scroller__inner {
             flex-wrap: nowrap;
             animation: scroll 40s linear infinite;
           }
         }
       }
-    }
-    
+    }    
     @keyframes scroll {
       to {
         transform: translateX(-100%);
@@ -572,7 +567,7 @@ hr{
 
 /* //feature */
 .feature{
-    height: 100vh;
+    height: 50vh;
     padding-top: 30px;
     .img-element{
         width: 100%;
@@ -747,8 +742,5 @@ hr{
     #chapter2{
         order: 1;
     }
+}
 
-    #chapter3{
-        order: 2;
-    }
-} */

@@ -471,7 +471,7 @@ hr {
 
 /* //feature */
 .feature {
-  height: 100vh;
+  height: 50vh;
   padding-top: 30px;
 }
 .feature .img-element {
@@ -500,8 +500,12 @@ hr {
 /* //last part */
 .keep-up-with-us {
   background-color: #E2DBC8;
+<<<<<<< HEAD
   height: 200vh;
   padding: 0 30rem;
+=======
+  height: 100vh;
+>>>>>>> 0e6f74753c69c2d54556d6bcf4b97326b5391c30
 }
 .keep-up-with-us .header-text h2 {
   padding: 2rem;
@@ -607,12 +611,11 @@ hr {
     gap: 0.5rem;
   }
 }
-/* @media (min-width:320px) and (max-width:576.98px) {
-    #chapter2{
-        order: 1;
-    }
-
-    #chapter3{
-        order: 2;
-    }
-} *//*# sourceMappingURL=styles.css.map */
+.footer_scroller .footer_scroller_inner {
+  display: flex;
+  gap: 1rem;
+}
+.footer_scroller .footer_scroller_inner li {
+  list-style: none;
+  font-size: 60px;
+}/*# sourceMappingURL=styles.css.map */
