@@ -735,7 +735,7 @@ hr{
         display: flex;
         gap: 1rem;
         .loop_text{
-            font-size: 500px;
+            font-size: 90px;
             list-style: none;
             gap: 5rem;
         }
@@ -761,6 +761,35 @@ hr{
         }
     }
 }
+
+// footer
+.footer_container{
+    .row{
+        .left-part{
+            display: inline-block;
+            justify-content: center;
+            align-items: center;
+            .footer_img_text{
+                span{
+                    img{
+
+                    }
+                }
+                .footer_text{
+                    p{
+
+                    }
+                }
+            }
+            .footer_email{
+                .input-group{
+
+                }
+            }
+        }
+    }
+}
+
 
 
 
