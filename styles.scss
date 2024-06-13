@@ -598,8 +598,9 @@ hr{
 /* //last part */
 .keep-up-with-us{
     background-color:#E2DBC8;
-    height: 220vh;
+    height: 120vh;
     padding: 0 30rem;
+    padding-bottom: 30px;
     .header-text{
         h2{
             padding: 2rem; 
@@ -665,7 +666,8 @@ hr{
     @media (min-width:320.98px) and (max-width:576.98px){
         .keep-up-with-us{
             padding: 0 20px;
-            height: 100vh;
+            height: auto;
+            padding-bottom: 20px;
             .ig-info{
                 display: block;
                 /* padding: 15px; */
@@ -686,8 +688,7 @@ hr{
 
     @media (min-width:576.98px) and (max-width:768.98px) {
         .keep-up-with-us{
-            height: 95vh;
-            padding: 0 30px;
+            height: auto;           
             .ig-info{
                 display: flex;
                 align-items: center;
@@ -708,8 +709,7 @@ hr{
     }
     @media (min-width:768px) and (max-width:1200.98px){
         .keep-up-with-us{
-            height: 180vh;
-            padding: 0 50px;
+                       
             .ig-info{
                 display: flex;
                 align-items: center;
@@ -729,18 +729,29 @@ hr{
         }
     }
 
+    /* //text_part// */
 .stay_in_loop{
     .loop{
         display: flex;
         gap: 1rem;
-        li{
-            font-size: 100px;
+        .loop_text{
+            font-size: 500px;
             list-style: none;
-            gap: 1rem;
+            gap: 5rem;
         }
     }
 }
 @media (min-width:320.98px) and (max-width:576.98px){
+    .stay_in_loop{
+        .loop{
+            span{
+                font-size: 60px;
+                gap:0.5rem;
+            }
+        }
+    }
+}
+@media (min-width:576.98px) and (max-width:768.98px){
     .stay_in_loop{
         .loop{
             span{
