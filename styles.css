@@ -593,6 +593,10 @@ hr {
   }
 }
 @media (min-width: 768px) and (max-width: 1200.98px) {
+  .keep-up-with-us {
+    padding: 0 5rem;
+    padding-bottom: 20px;
+  }
   .keep-up-with-us .ig-info {
     display: flex;
     align-items: center;
@@ -604,6 +608,9 @@ hr {
   }
 }
 /* //text_part// */
+.stay_in_loop {
+  background-color: #231f20;
+}
 .stay_in_loop .loop {
   display: flex;
   gap: 1rem;
@@ -612,22 +619,24 @@ hr {
   font-size: 70px;
   list-style: none;
   gap: 5rem;
+  color: #D9F567;
 }
 
 @media (min-width: 320.98px) and (max-width: 576.98px) {
-  .stay_in_loop .loop span {
-    font-size: 60px;
-    gap: 0.5rem;
+  .stay_in_loop .loop .loop_text {
+    font-size: 16px;
+    gap: 0.1rem;
   }
 }
 @media (min-width: 576.98px) and (max-width: 768.98px) {
   .stay_in_loop .loop span {
-    font-size: 60px;
+    font-size: 20px;
     gap: 0.5rem;
   }
 }
+/* // footer */
 .footer-container {
-  padding-top: 4rem;
+  padding: 6rem 8rem;
   background-color: #231f20;
 }
 .footer-container .row .left-part .footer_img_text {
@@ -678,4 +687,61 @@ hr {
 .footer-container .row .col-lg-3 .collections span a {
   text-decoration: none;
   color: #fff;
+}
+
+/* //contact_logo */
+.contact_logo {
+  background-color: #231f20;
+  max-width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  padding: 5rem 10rem;
+}
+.contact_logo .contact_logo_img {
+  width: 500px;
+}
+.contact_logo .contact_logo_img .img {
+  padding-right: 0.6rem;
+}
+.contact_logo .contact_logo_img .text {
+  color: #fff;
+}
+
+@media (min-width: 320px) and (max-width: 576.98px) {
+  .footer-container {
+    padding: 3rem 1rem;
+  }
+  .footer-container .row .left-part {
+    padding: 0;
+  }
+  .footer-container .row .left-part .footer_email {
+    padding: 0;
+  }
+  .footer-container .row .left-part .footer_email .input-group {
+    max-width: 320px;
+    width: 100%;
+    padding-left: 1rem;
+  }
+  .footer-container .row .left-part .footer_email .input-group input {
+    padding: 15px;
+  }
+  .footer-container .row .left-part .footer_email .input-group .btn {
+    width: 80px;
+  }
+  .footer-container .row .col-lg-3 .collections span {
+    padding-left: 3rem;
+  }
+}
+/* //.contact_logo */
+.contact_logo {
+  background-color: #231f20;
+  display: flex;
+  padding: 0;
+  justify-content: center;
+}
+.contact_logo .contact_logo_img {
+  padding: 0 20px;
+}
+.contact_logo .contact_logo_img .img {
+  padding-right: 4px;
 }/*# sourceMappingURL=styles.css.map */
