@@ -19,4 +19,14 @@ function addAnimation(){
         });
     });
 }
+///
+const loops = document.querySelectorAll(".loop");
 
+if(!window.matchMedia("(prefers-reduced-motion: reduce)").matches){
+    addAnimation();
+}
+function addAnimation(){
+    loops.forEach((loop) => {
+        loop.setAttribute('data-animated', true);
+    });
+}
